@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+
+<!--Create your own custom quiz-->
+
+<html>
+	<head>
+		<title>Simple JavaScript Quiz</title>
+		<link rel="stylesheet" href="css/style.css">
+		
+		<script src="js/script.js"></script>
+	</head>
+	<body>
+		<div id="container">
+			<header>
+				<h1>IOS Swift 2.0 Quiz</h1>
+				<p>How's your knowledge of Swift?</p>
+			</header>
+			<section>
+				<div id="results"></div>
+				<form name="quizForm" onsubmit="return submitResponses()">
+
+					<!--Rewrite each question between the h3 tags!-->
+					<!--Rewrite each answer which is found just before the <br> tag -->
+
+					<h3>1. What type of language is Swift 2.0</h3>
+					<input type="radio" name="q1" value="a" id="q1a">a. Functional<br>
+					<input type="radio" name="q1" value="b" id="q1b">b. Imperative<br>
+					
+					<h3>2. Which function does AVFoundation not cover</h3>
+					<input type="radio" name="q2" value="a" id="q2a">a. Core Video<br>
+					<input type="radio" name="q2" value="b" id="q2b">b. Camera Control<br>
+					<input type="radio" name="q2" value="c" id="q2c">c. Detecting user touch<br>
+					<input type="radio" name="q2" value="d" id="q2d">d. Light Control<br>
+
+					<h3>3. How would you scale an image using Swift?</h3>
+					<input type="radio" name="q3" value="a" id="q3a">a. func CGAffineTransformMakeScale(CGFloat, CGFloat) -> CGAffineTransform;<br>
+					<input type="radio" name="q3" value="b" id="q3b">b. func Transform(CGFloat, CGFloat) -> CGAffineTransform;<br>
+					<input type="radio" name="q3" value="c" id="q3c">c. func Scale(CGFloat, CGFloat);<br>
+					<input type="radio" name="q3" value="d" id="q3d">d. func increaseSize(CGFloat, CGFloat);<br>
+
+					<h3>4. Can you create a live image filter in IOS</h3>
+					<input type="radio" name="q4" value="a" id="q4a">a. Yes<br>
+					<input type="radio" name="q4" value="b" id="q4b">b. No<br>
+
+					<h3>5. Which advertising medium no longer works with IOS development</h3>
+					<input type="radio" name="q5" value="a" id="q5a">a. RevMob<br>
+					<input type="radio" name="q5" value="b" id="q5b">b. iAd<br>
+					<input type="radio" name="q5" value="c" id="q5c">c. Chartboost<br>
+					<input type="radio" name="q5" value="d" id="q5d">d. Vungle<br>
+
+					<h3>6. What library should you import to do game development</h3>
+					<input type="radio" name="q6" value="a" id="q6a">a. Game Kit<br>
+					<input type="radio" name="q6" value="b" id="q6b">b. Game Mob<br>
+					<input type="radio" name="q6" value="c" id="q6c">c. Sprite Kit<br>
+					<input type="radio" name="q6" value="d" id="q6d">d. Sprite Mob<br>
+
+					<h3>7. How do you display a new navigation controller in Swift</h3>
+					<input type="radio" name="q7" value="a" id="q7a">a. displayNewPage<br>
+					<input type="radio" name="q7" value="b" id="q7b">b. performSegueWithIdentifier<br>
+					<input type="radio" name="q7" value="c" id="q7c">c. showScreen<br>
+					<input type="radio" name="q7" value="d" id="q7d">d. insertIntoView<br>
+
+					<h3>8. What is core data used for</h3>
+					<input type="radio" name="q8" value="a" id="q8a">a. Storing images<br>
+					<input type="radio" name="q8" value="b" id="q8b">b. Storing user text input<br>
+					<input type="radio" name="q8" value="c" id="q8c">c. Storing audio<br>
+					<input type="radio" name="q8" value="d" id="q8d">d. All of the above<br>
+
+					<h3>9. Why would you use core data</h3>
+					<input type="radio" name="q9" value="a" id="q9a">a. To load data faster<br>
+					<input type="radio" name="q9" value="b" id="q9b">b. To save memory<br>
+					<input type="radio" name="q9" value="c" id="q9c">c. Persistent storage<br>
+					<input type="radio" name="q9" value="d" id="q9d">d. For fun<br>
+
+					<h3>10. Which Mobile platform to developers on average make the most money</h3>
+					<input type="radio" name="q10" value="a" id="q10a">a. Android<br>
+					<input type="radio" name="q10" value="b" id="q10b">b. IOS<br>
+					<input type="radio" name="q10" value="c" id="q10c">c. Windows<br>
+					<input type="radio" name="q10" value="d" id="q10d">d. Blackberry<br>
+					<br><br>
+
+					<input type="submit" value="Submit Answers">
+				</form>
+			</section>
+			<footer>
+				<p>Copyright &copy; 2016 Jeremy, All Rights Reserved</p>
+			</footer>
+		</div>
+	</body>	
+</html>
